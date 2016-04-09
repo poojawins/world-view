@@ -32,8 +32,7 @@ li a {
 }
 
 .land:hover {
-  fill:#33CC33;
-  stroke-width: 1px;
+  stroke-width: 2px;
 }
 
 .focused {
@@ -188,10 +187,10 @@ img {
 
     //Color the countries
 
-    var colors = ["#291249", "#5e3450", "#9b3c5b"];
+    var colors = ["#291249", "#291249", "#291249", "#291249", "#5e3450", "#5e3450", "#9b3c5b"];
     d3.selectAll('path.land')
     .style('fill', function(d) {
-        var color = colors[Math.floor(Math.random()*3)];
+        var color = colors[Math.floor(Math.random()*7)];
         return color;
     });
 
