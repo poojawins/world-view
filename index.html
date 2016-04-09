@@ -154,7 +154,7 @@ img {
     var world = svg.selectAll("path.land")
     .data(countries)
     .enter().append("path")
-    .attr("class", "land")
+    .attr("class", function(d) {return "land " + d.id; })
     .attr("d", path)
 
     //Drag event
